@@ -1,10 +1,13 @@
 import React from "react";
 import styled from 'styled-components';
 import Sidebar from "./components/Sidebar";
-// import { Route } from "react-router-dom";
+import { Route , Routes} from "react-router-dom";
 // import Switch from '@material-ui/core/Switch';
 import Homepage from "./pages/Homepage";
-
+import Aboutpage from "./pages/Aboutpage";
+import Resume from "./pages/Resume";
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
 
 function App() {
     return (
@@ -18,23 +21,14 @@ function App() {
             <div className="line-4"></div>
           </div>
           <Homepage />
-          {/* <Switching> */}
-            {/* <Route path="/" exact>
-              <HomePage />
-            </Route> */}
-            {/* <Route path="/about" exact>
-              <AboutPage />
-            </Route>
-            <Route path="/resume" exact>
-              <ResumePage />
-            </Route>
-            <Route path="/portfolios" exact>
-              <PortfoliosPage />
-            </Route>
-            <Route path="/contact" exact>
-              <ContactPage />
-            </Route> */}
-          {/* </Switching> */}
+          <Routes> 
+             <Route path="/" element={<Homepage/>} />
+             <Route path="/about" element={<Aboutpage/>} />
+             <Route path="/resume" element={<Resume/>} />
+             <Route path="/portfolio" element={<Portfolio/>} />
+             <Route path="/contact" element={<Contact/>} />
+            
+          </Routes>
             </MainContentStyled>
         </div>
        
