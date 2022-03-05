@@ -33,9 +33,9 @@ Advantages of Portfolio:
 
 ## Links
 * Github source code: https://github.com/sinka27/React_Portfolio
-* Github deployed page: https://react-portfolio-parul.herokuapp.com/
+* Deployed page: https://react-portfolio-parul.herokuapp.com/
 ## Screenshot
-!
+![](./src/images/screenshot.png)
 
 ## Credits
 Parul Raj
