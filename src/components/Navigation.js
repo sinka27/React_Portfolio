@@ -14,20 +14,17 @@ function Navigation() {
       </div>
       <ul className='nav-items'>
         <li className='nav-item'>
-            <NavLink to ="/" activeClassName = "active-class" exact>Home</NavLink>
+            <NavLink to ="/" activeClassName = "active-class" exact>About</NavLink>
         </li>
-        <li className="nav-item">
-                    <NavLink to="/about" activeClassName="active-class" exact>About</NavLink>
-                </li>
-                <li className="nav-item">
-                    <NavLink to="/resume" activeClassName="active-class" exact>Resume</NavLink>
-                </li>
-                <li className="nav-item">
-                    <NavLink to="/portfolio" activeClassName="active-class" exact>Portfolio</NavLink>
-                </li>
-                <li className="nav-item">
-                    <NavLink to="/contact" activeClassName="active-class" exact>Contact</NavLink>
-                </li>
+        <li className='nav-item'>
+            <NavLink to="/skills" activeClassName="active-class" exact>Skills</NavLink>
+        </li>
+        <li className='nav-item'>
+            <NavLink to="/portfolio" activeClassName="active-class" exact>Portfolio</NavLink>
+        </li>
+        <li className='nav-item'>
+            <NavLink to="/contact" activeClassName="active-class" exact>Contact</NavLink>
+        </li>
       </ul>
       <footer className="footer">
                 <p>@2022 My Portfolio</p>
