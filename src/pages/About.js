@@ -6,11 +6,11 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import PhoneIcon from '@mui/icons-material/Phone';
 import MailIcon from '@mui/icons-material/Mail';
 
-function Homepage() {
+function Aboutpage() {
     return (
         <div className = "App">
           
-        <HomepageStyled>
+        <AboutStyled>
            <div className="tsparticles">
                <Particles />
            </div>
@@ -38,13 +38,13 @@ function Homepage() {
                 </div> 
             </div>
            
-            </HomepageStyled>
+            </AboutStyled>
         </div>
        
     )}
 
 //customised div
-const HomepageStyled = styled.header`
+const AboutStyled = styled.header`
  width: 100%;
  height: 100vh;
  position: relative;
@@ -116,4 +116,4 @@ const HomepageStyled = styled.header`
 
  }
 `;
-export default Homepage;
+export default Aboutpage;
