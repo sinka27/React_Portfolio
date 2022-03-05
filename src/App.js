@@ -2,10 +2,8 @@ import React from "react";
 import styled from 'styled-components';
 import Sidebar from "./components/Sidebar";
 import { Route , Routes} from "react-router-dom";
-// import Switch from '@material-ui/core/Switch';
-import Homepage from "./pages/Homepage";
-import Aboutpage from "./pages/Aboutpage";
-import Resume from "./pages/Resume";
+import Aboutpage from "./pages/About";
+import ResumePage from "./pages/Resume";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 
@@ -20,14 +18,11 @@ function App() {
             <div className="line-3"></div>
             <div className="line-4"></div>
           </div>
-          <Homepage />
           <Routes> 
-             <Route path="/" element={<Homepage/>} />
-             <Route path="/about" element={<Aboutpage/>} />
-             <Route path="/resume" element={<Resume/>} />
+             <Route path="/" element={<Aboutpage/>} />
+             <Route path="/skills" element={<ResumePage/>} />
              <Route path="/portfolio" element={<Portfolio/>} />
              <Route path="/contact" element={<Contact/>} />
-            
           </Routes>
             </MainContentStyled>
         </div>
