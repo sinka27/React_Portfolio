@@ -9,7 +9,6 @@
 - [Links](#links)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Walkthrough Video](#walkthrough-video)
 
 ## Description
 A work portfolio is a collection of work samples that shows your capabilities to prospective employers.
@@ -21,7 +20,7 @@ Advantages of Portfolio:
 ## Motivation
 * To showcase your work to potential employers or potential clients.
 
-## Why do we need Protfolio?
+## Why do we need Protfolio
 * Portfolios demonstrate the competencies you would list on a resume. 
 * It showcases your work to potential employers during job hunt. 
 * It presents evidence of your relevant skills and abilities. 
@@ -34,7 +33,7 @@ Advantages of Portfolio:
 * Responsive layout that adapts to different devices.
 * Ensured all links functioning correctly.
 
-## Tools & Technologies used
+## Tools and Languages
 1. Visual Studio Code
 2. GitHub
 3. React

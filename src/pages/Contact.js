@@ -3,6 +3,7 @@ import { validateEmail } from "../components/utils/helpers";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import { Button } from "react-bootstrap";
+import { MainLayout} from '../styles/Layouts';
 
 export default function Contact() {
   // Create state variables for the fields in the form
@@ -48,44 +49,48 @@ export default function Contact() {
     // TODO: Set the password back to an empty string after the user clicks submit
     setMessage("");
     setEmail("");
-    alert(`Hello ${userName}`);
+    alert(`Hello ${userName}! Your message has been delivered successfully`);
   };
   return (
-    <Container className="contact-form content">
-      <h3>Contact</h3>
-      <Form className="form">
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label>Name:</Form.Label>
-          <Form.Control type="text" placeholder="Name" value={userName}
-          name="userName"
-          onChange={handleInputChange}/>
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Email Address:</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" value={email}
-          name="email"
-          onChange={handleInputChange}/>
-        </Form.Group>
-        <Form.Group>
-          <Form.Label>Message:</Form.Label>
-          <Form.Control
-            as="textarea"
-            placeholder="Leave a message here"
-            style={{ height: "100px" }}
-            name="message"
-            onChange={handleInputChange}
-            value={message}
-          />
-        </Form.Group>
-        <Button variant="secondary" type="submit" onClick={handleFormSubmit} className="submitBtn">
-          Submit
-        </Button>
-      </Form>
-      {errorMessage && (
-        <div>
-          <p className="error-text">{errorMessage}</p>
-        </div>
-      )}
-    </Container>
+    <MainLayout>
+      <h1>Contact</h1>
+      <Container className="contact-form content">
+        
+        <Form className="form">
+          <Form.Group className="mb-3" controlId="formBasicPassword">
+            <Form.Label>Name:</Form.Label>
+            <Form.Control type="text" placeholder="Name" value={userName}
+            name="userName"
+            onChange={handleInputChange}/>
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Label>Email Address:</Form.Label>
+            <Form.Control type="email" placeholder="Enter email" value={email}
+            name="email"
+            onChange={handleInputChange}/>
+          </Form.Group>
+          <Form.Group>
+            <Form.Label>Message:</Form.Label>
+            <Form.Control
+              as="textarea"
+              placeholder="Leave a message here"
+              style={{ height: "100px" }}
+              name="message"
+              onChange={handleInputChange}
+              value={message}
+            />
+          </Form.Group>
+          <br></br>
+          <Button variant="secondary" type="submit" onClick={handleFormSubmit} className="submitBtn">
+            Submit
+          </Button>
+        </Form>
+        {errorMessage && (
+          <div>
+            <p className="error-text">{errorMessage}</p>
+          </div>
+        )}
+      </Container>
+    </MainLayout>
   );
 }
